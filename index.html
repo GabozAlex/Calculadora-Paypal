@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora PayPal</title>
+</head>
+<body>
+    <header>
+        <h1>CambiosSaldoVenezuela</h1>
+    </header>
+    <main>
+        <section class="calculadora">
+            <h2>Calculadora PayPal</h2>
+            <div class="comision">
+                <h3>La comision de Paypal</h3>
+                <p> 
+                    <input type="number" value="5.4" disabled> % mas $ <input type="number" value="0.30" disabled>
+                    <br>
+                    <strong>Ejemplo:</strong> Si envias $100, la comision seria $5.70
+                    <br>
+                </p>
+            </div>
+            <div class="recibir">
+                <h3>Calcular para cuanto recibes</h3>
+                <form action="">
+                    <label for="cantidad">Cantidad a recibir:<label>
+                    <input type="number" id="cantidad" name="cantidad" placeholder="0.00" required>
+                    <label for="">La comision es de:</label>
+                    <input type="number" id="comision" name="comision" placeholder="0.00" disabled>
+                    <label for="">Hay que enviar</label>
+                    <input type="number" id="enviar" name="enviar" placeholder="0.00" disabled>                   
+                    <button type="submit">Calcular</button>
+                </form>                
+            </div>
+            <div class="enviar">
+                <h3>Calcular para cuanto vas a recibir</h3>
+                <form action="">
+                    <label for="cantidad">Cantidad a enviar:</label>
+                    <input type="number" id="cantidad" name="cantidad" placeholder="0.00" required>
+                    <label for="">La comision es de:</label>
+                    <input type="number" id="comision" name="comision" placeholder="0.00" disabled>
+                    <label for="">Se reciben</label>
+                    <input type="number" id="enviar" name="enviar" placeholder="0.00" disabled>
+                    <button type="submit">Calcular</button>
+                </form>                 
+            </div>
+        </section>
+        <section class="preguntas">
+
+        </section>
+    </main>
+</body>
+</html>
