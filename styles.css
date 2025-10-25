@@ -1,0 +1,183 @@
+/* Estilos Globales y Tipografía */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Fondo gris claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed #ddd;
+    margin: 30px 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #0070BA; /* Azul PayPal */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+header h1 {
+    font-size: 2.2em;
+    margin: 0 0 5px 0;
+    font-weight: 700;
+}
+
+/* Tarjetas y Secciones */
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: #0070BA;
+    border-bottom: 3px solid #0070BA;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+/* Estilos de la Calculadora */
+.calculo-forms {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+@media (min-width: 768px) {
+    .calculo-forms {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.recibir, .enviar {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.recibir h3, .enviar h3 {
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estilos de Formularios (Inputs y Labels) */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #555;
+}
+
+form input[type="number"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+    font-size: 1em;
+}
+
+/* Estilo para el resultado */
+form input.resultado {
+    background-color: #e6f7ff;
+    font-weight: 700;
+    color: #0070BA;
+    border: 2px solid #0070BA;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    background-color: #0070BA;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #005a96;
+}
+
+/* Estilos de la Sección de Información */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+@media (min-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.list-pasos {
+    padding-left: 20px;
+}
+.list-pasos li {
+    margin-bottom: 8px;
+}
+
+
+/* Estilos del Botón de WhatsApp */
+.contacto-seccion {
+    text-align: center;
+    background-color: #e6f7ff; 
+}
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    background-color: #25D366; /* Verde WhatsApp */
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
+}
+
+.small-note {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0070BA;
+    color: #dcdcdc;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
